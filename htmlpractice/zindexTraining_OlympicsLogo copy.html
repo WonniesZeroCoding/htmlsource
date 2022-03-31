@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .circle-group .circle {
+        float: left;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border-width: 20px;
+        border-style: solid;
+        margin-right: -130px;
+      }
+      .circle-group .circle:nth-child(2n) {
+        margin-top: 125px;
+      }
+      .circle1 {
+        border-color: rgb(0, 195, 255);
+      }
+      .circle2 {
+        border-color: yellow;
+        z-index: 4;
+      }
+      .circle3 {
+        border-color: black;
+        z-index: 3;
+      }
+      .circle4 {
+        border-color: green;
+        z-index: 2;
+      }
+      .circle5 {
+        border-color: red;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- z-index 배운 내용을 토대로 올림픽 로고 만들기 -->
+    <div class="circle-group">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+      <div class="circle circle4"></div>
+      <div class="circle circle5"></div>
+    </div>
+  </body>
+</html>
