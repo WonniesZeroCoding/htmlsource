@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      img {
+        vertical-align: top;
+      }
+      .box {
+        border: 1px solid black;
+        position: relative;
+      }
+      .a {
+        background-color: blue;
+        left: 50px;
+        top: 50px;
+      }
+      .b {
+        background-color: red;
+        left: 50px;
+        right: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- position : 배치 방법 
+        1) static(기본) : 요소를 문서의 흐름에 맞게 배치 
+        2) relative : 문서 흐름에 따라 위치를 지정
+                    -> top, left, right, bottom 값이 필요하고, 기준 값은 요소가 처음에 배치된 자리가 기준
+        3) absolute : 원하는 위치에 배치를 한다.단*부모 요소가 필요하며 부모가 누구냐에 따라 부모의 위치를 기준으로 잡음. (위치 값이 필요함)
+                      relative 요소가 주로 부모가 됨
+        4) fixed : 지정한 위치에 고정해 배치. 화면에서 요소가 잘릴 수도 있음 (위치 값이 필요함 right-left..등등)
+    -->
+    <div class="box a">
+      <img src="https://via.placeholder.com/100x120" alt="" />
+    </div>
+    <div class="box b">
+      <img src="https://via.placeholder.com/100x120" alt="" />
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet repellat
+      impedit dolor earum facilis veniam atque deleniti a nemo, similique,
+      necessitatibus quam cupiditate eius illum repudiandae corrupti vel aliquam
+      corporis debitis saepe! Error molestias, sunt, numquam ut ipsa mollitia
+      nisi repellendus delectus unde nihil doloribus dolores accusamus
+      perferendis praesentium, porro pariatur rem inventore! Iure veritatis,
+      minima tenetur at facilis unde nihil labore nulla nobis consequatur,
+      libero debitis deserunt eveniet natus, quis beatae aut numquam! Tempora
+      recusandae veritatis nesciunt magni minus architecto commodi culpa,
+      cupiditate maiores explicabo doloribus hic reiciendis nostrum suscipit?
+      Voluptatem sint quam facilis, excepturi maiores provident hic totam.
+    </p>
+  </body>
+</html>

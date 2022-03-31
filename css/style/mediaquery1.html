@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: url(images/bg0.jpg) no-repeat fixed;
+        background-size: cover; /*cover는 화면 전체에 적용 시키겠다*/
+      }
+
+      @media screen and (max-width: 1024px) {
+        /* 769px ~ 1024px */
+        body {
+          background: url(images/bg1.jpg) no-repeat fixed;
+          background-size: cover;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        /* 321px ~ 768px */
+        body {
+          background: url(images/bg2.jpg) no-repeat fixed;
+          background-size: cover;
+        }
+      }
+      @media screen and (max-width: 320px) {
+        /* ~ 320px */
+        body {
+          background: url(images/bg3.jpg) no-repeat fixed;
+          background-size: cover;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        미디어쿼리(mediaquery) : 사이트에 접속하는 장치에 따라 특정한 css스타일을 사용하도록 해줌
+
+        @media [only|not] 미디어 유형 [and 조건]    *조건은 여러개 올 수 있음
+        : only 해당하는 미디어 유형에만 적용
+        : not 해당하는 미디어 유형만 제외하고 적용
+
+        미디어 유형 all(모든 장치) , 
+    -->
+  </body>
+</html>
